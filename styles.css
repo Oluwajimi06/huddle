@@ -1,0 +1,549 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.bg-hero{
+    background:  #eefaff url("images/bg-hero-desktop.svg");
+    height: 500px;
+    width: 100%;
+    padding: 10px 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+    height: 30px;
+}
+.header-link{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    text-align: center;
+    height: 30px;  
+} 
+.link-items{
+    list-style: none;
+    text-align: center;
+}
+.link-items a{
+    text-decoration: none;
+    color: black;
+    padding: 60px;
+    text-align: center;
+}
+.hero-mockup{
+    height: 300px;
+    position: relative;
+    bottom: 170px;
+    right: 30px;
+}
+.hero-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-text{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.hero-text-h1{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.hero-text-p{
+    margin-bottom: 20px;
+}
+button{
+    height: 40px;
+    padding:0 20px;
+    border-radius: 20px;
+    background-color: hsl(322, 100%, 66%);
+    border: 2px solid hsl(322, 100%, 66%);
+}
+button a{
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.col-1{
+    height: 1500px;
+    margin-top: 100px;
+    padding: 0 100px;
+}
+.rectangle-col{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #e1e8ee;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.rectangle-col-content-1{
+    display: flex;
+}
+.rectangle-col-content-1-text{
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+.rectangle-col-content-2-text{
+    position: relative;
+    left: 80px;
+    top: 100px;
+}
+
+.image-illustration{
+    height: 300px;
+    margin-left: 100px;
+}
+
+.image-flowing{
+    height: 300px;
+    margin-left: 50px;
+}
+.image-users{
+    height: 300px;
+    margin-left: 100px;
+}
+
+footer{
+    height: 700px;
+    background-color:   #235f4b;
+    padding:0 30px;
+}
+
+.footer-rectangle{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #e1e8ee;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 150px;
+    left: 400px;
+    justify-content: center;
+    color: black; 
+    padding: 30px;
+}
+.footer-btn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 280px;
+    right: 20px;
+}
+.footer-h1{
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-items{
+    display: flex;
+}
+
+.link-2{
+    list-style: none;
+    margin-left: 50px;
+    position: relative;
+    top: 50px;
+}
+.link-3{
+    list-style: none;
+    margin-left: 50px;
+    position: relative;
+    top: 50px;
+}
+li{
+    margin-bottom: 20px;
+}
+.txt{
+    text-decoration: none;
+    color: white;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid white;  
+}
+.circle-container{
+    display: flex;
+    margin-left: 100px;
+    position: relative;
+    top: 30px;
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+}
+.txt:hover{
+    color: black;
+    transition: 0.6s ease;
+}
+
+
+/* CSS FOR MOBILE PHONES */
+@media (max-width:767px){
+    body{
+        font-size: 1rem;
+    }
+
+    .bg-hero{
+        background:  #eefaff url("images/bg-hero-mobile.svg");
+        height: 100vh;
+        width: 100%;
+        padding: 10px 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .header{
+        padding: 0;
+    }
+    .logo{
+        height: 20px;
+    }
+    .link-items a{
+        padding: 10px;   
+    }
+    .hero-mockup{
+        height: 40vh;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        top: 30px;
+    }
+    .hero-text{
+        margin-left: 0;
+        text-align: center;
+        font-size: 0.6rem;
+    }
+    button{
+        height: 40px;
+        padding:0 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color: hsl(322, 100%, 66%);
+        border: 2px solid hsl(322, 100%, 66%);
+    }
+
+    .col-1{
+        padding: 0 20px;
+        height: 350vh;
+    }
+
+    .rectangle-col{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid #e1e8ee;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+    .rectangle-col-content-1{
+        flex-direction: column;
+    }
+    .image-illustration{
+        margin-left: 0;
+        height: 200px;
+    }
+    .image-users{
+        height: 200px;
+        margin-left: 0;
+    }
+    .rectangle-col-content-1-text{
+        text-align: center;
+        position: relative;
+        top: 400px;
+        left: 0;
+        font-size: 0.7rem;
+    }
+    .rectangle-col-content-2-text{
+        position: relative;
+        left: 0;
+        top: 200px;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    .image-flowing{
+        height: 200px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .image-users{
+        height: 200px;
+        margin-left: 0;
+    }
+    .footer-rectangle{
+        width: 100%;
+        position: relative;
+        bottom: 150px;
+        left: 0; 
+        padding: 20px;
+    }
+    .footer-btn{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 250px;
+        right: 20px;
+    }
+    .footer-items{
+        flex-direction: column;
+    }
+    .link-2{
+       
+        margin-left: 0;
+        position: relative;
+        top: 20px;
+    }
+    .link-3{
+        list-style: none;
+        margin-left: 0;
+        position: relative;
+        top: 20px;
+    }
+    footer{
+        height: 170vh;
+    }
+    .circle-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .copyright{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (orientation: landscape) {
+        .bg-hero{
+            height: 200vh;
+        }
+        .hero-mockup{
+            height: 100vh;
+        }
+        .image-illustration{
+            height: 200px;
+        }
+        .rectangle-col-content-1-text{
+            top: 270px;
+        }
+        .image-flowing{
+            height: 200px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .image-users{
+            height: 200px;
+        }
+        .rectangle-col-content-2-text{
+            top: 20px;
+        }
+        .col-1{
+            padding: 0 20px;
+            height: 400vh;
+        }
+        footer{
+            height: 250vh;
+        }
+    }
+  
+
+}
+
+
+/* CSS FOR TABLETS */
+@media (min-width:768px) and (max-width:1200px){
+    body{
+        font-size: 1rem;
+    }
+    .bg-hero{
+        background:  #eefaff url("images/bg-hero-mobile.svg");
+        height: 80vh;
+        width: 100%;
+        padding: 10px 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .header{
+        padding: 0;
+    }
+    .logo{
+        height: 50px;
+    }
+    .link-items a{
+        padding: 50px;   
+    }
+    .hero-mockup{
+        height: 40vh;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        top: 30px;
+    }
+    .hero-text{
+        margin-left: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    button{
+        height: 40px;
+        padding:0 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color: hsl(322, 100%, 66%);
+        border: 2px solid hsl(322, 100%, 66%);
+    }
+    .col-1{
+        padding: 0 20px;
+        height: 350vh;
+    }
+
+    .rectangle-col{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid #e1e8ee;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .rectangle-col-content-1{
+        flex-direction: column;
+    }
+    .image-illustration{
+        margin-left: 0;
+        height: 500px;
+    }
+    .image-users{
+        height: 500px;
+        margin-left: 0;
+    }
+    .rectangle-col-content-1-text{
+        text-align: center;
+        position: relative;
+        top: 700px;
+        left: 0;
+        font-size: 1rem;
+    }
+    .rectangle-col-content-2-text{
+        position: relative;
+        left: 0;
+        top: 200px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .image-flowing{
+        height: 500px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .footer-rectangle{
+        width: 100%;
+        position: relative;
+        bottom: 150px;
+        left: 0; 
+        padding: 20px;
+    }
+    .footer-btn{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 250px;
+        right: 20px;
+    }
+    .footer-items{
+        flex-direction: column;
+    }
+    .link-2{
+       
+        margin-left: 0;
+        position: relative;
+        top: 20px;
+    }
+    .link-3{
+        list-style: none;
+        margin-left: 0;
+        position: relative;
+        top: 20px;
+    }
+    footer{
+        height: 100vh;
+    }
+    .circle-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .copyright{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (orientation: landscape) {
+        .bg-hero{
+            height: 220vh;
+        }
+        .hero-mockup{
+            height: 100vh;
+        }
+        .image-illustration{
+            height: 300px;
+        }
+        .rectangle-col{
+            height: 170vh;
+        }
+        .rectangle-col-content-1-text{
+            top: 400px;
+        }
+        .image-flowing{
+            height: 300px;
+        }
+        .rectangle-col-content-2-text{
+            top: 20px;
+        }
+        .col-1{
+            padding: 0 20px;
+            height: 600vh;
+        }
+        .image-users{
+            height: 300px;
+        }
+        footer{
+            height: 270vh;
+        }
+        
+
+        
+    }
+
+
+}
